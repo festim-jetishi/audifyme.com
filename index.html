@@ -1,0 +1,672 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Audifyme | Any Book. Any Voice.</title>
+
+    <!-- Sophisticated Typography Pairing -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Floating Pill Navigation -->
+    <nav class="nav-pill reveal-fade">
+        <div class="nav-brand"><img src="/logo.png" alt="Audifyme" class="nav-logo">Audifyme</div>
+        <div class="nav-links">
+            <a href="#how-it-works">How It Works</a>
+            <a href="#features">Features</a>
+        </div>
+        <a href="https://github.com/festim-jetishi/audifyme-app" class="btn-primary">Get the App</a>
+    </nav>
+
+    <main>
+        <!-- Wispr-Style Hero Division -->
+        <section class="hero-section">
+            <div class="hero-container">
+
+                <div class="hero-content">
+                    <h1 class="reveal-up">Any book.<br><span class="italic">Any voice.</span></h1>
+                    <p class="hero-subtitle reveal-up delay-1">Hear your favorite stories narrated by the people you
+                        love most. Your mom, your best friend, a celebrity — just record 30 seconds and Audifyme brings
+                        any text to life in their voice.</p>
+
+                    <div class="hero-actions reveal-up delay-2">
+                        <a href="#" class="btn-large">Start Listening Free</a>
+                    </div>
+
+                    <p class="hero-microcopy reveal-up delay-3">Available on iOS. No credit card needed.</p>
+                </div>
+
+                <!-- Mascot with Glow -->
+                <div class="hero-visual reveal-scale delay-2">
+                    <div class="mascot-glow"></div>
+                    <div class="mascot-wrapper">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="100%" height="100%">
+                            <style>
+                                @keyframes twinkle {
+
+                                    0%,
+                                    100% {
+                                        opacity: 1;
+                                        transform: scale(1);
+                                    }
+
+                                    50% {
+                                        opacity: 0.3;
+                                        transform: scale(0.7);
+                                    }
+                                }
+
+                                @keyframes blink {
+
+                                    0%,
+                                    94%,
+                                    100% {
+                                        transform: scaleY(1);
+                                    }
+
+                                    97% {
+                                        transform: scaleY(0.1);
+                                    }
+                                }
+
+                                @keyframes bob {
+
+                                    0%,
+                                    100% {
+                                        transform: translateY(0px);
+                                    }
+
+                                    50% {
+                                        transform: translateY(-3px);
+                                    }
+                                }
+
+                                .sparkle-1 {
+                                    animation: twinkle 2s ease-in-out infinite;
+                                    transform-origin: 45px 40px;
+                                }
+
+                                .sparkle-2 {
+                                    animation: twinkle 2.5s ease-in-out infinite 0.5s;
+                                    transform-origin: 155px 25px;
+                                }
+
+                                .sparkle-3 {
+                                    animation: twinkle 2.2s ease-in-out infinite 1s;
+                                    transform-origin: 170px 135px;
+                                }
+
+                                .cat-head {
+                                    animation: bob 3s ease-in-out infinite;
+                                }
+                            </style>
+                            <circle cx="100" cy="100" r="95" fill="#111827" />
+                            <g fill="#2dd4bf">
+                                <path class="sparkle-1"
+                                    d="M 40 40 Q 45 40 45 35 Q 45 40 50 40 Q 45 40 45 45 Q 45 40 40 40" />
+                                <path class="sparkle-2"
+                                    d="M 150 25 Q 155 25 155 20 Q 155 25 160 25 Q 155 25 155 30 Q 155 25 150 25" />
+                                <path class="sparkle-3"
+                                    d="M 165 135 Q 170 135 170 130 Q 170 135 175 135 Q 170 135 170 140 Q 170 135 165 135" />
+                            </g>
+                            <ellipse cx="100" cy="140" rx="45" ry="40" fill="#FFFFFF" />
+                            <g class="cat-head">
+                                <polygon points="40,80 30,20 80,60" fill="#FFFFFF" />
+                                <polygon points="43,70 35,30 72,58" fill="#f472b6" />
+                                <polygon points="160,80 170,20 120,60" fill="#FFFFFF" />
+                                <polygon points="157,70 165,30 128,58" fill="#f472b6" />
+                                <ellipse cx="100" cy="100" rx="65" ry="50" fill="#FFFFFF" />
+                                <g stroke="#0f172a" stroke-width="2" stroke-linecap="round" opacity="0.3">
+                                    <line x1="38" y1="98" x2="15" y2="93" />
+                                    <line x1="35" y1="105" x2="10" y2="105" />
+                                    <line x1="38" y1="112" x2="15" y2="117" />
+                                    <line x1="162" y1="98" x2="185" y2="93" />
+                                    <line x1="165" y1="105" x2="190" y2="105" />
+                                    <line x1="162" y1="112" x2="185" y2="117" />
+                                </g>
+                                <ellipse cx="58" cy="112" rx="10" ry="6" fill="#f472b6" opacity="0.6" />
+                                <ellipse cx="142" cy="112" rx="10" ry="6" fill="#f472b6" opacity="0.6" />
+                                <g style="transform-origin: 72px 105px; animation: blink 4s infinite;">
+                                    <ellipse cx="72" cy="105" rx="12" ry="12" fill="#0f172a" />
+                                    <ellipse cx="68" cy="101" rx="4.5" ry="4.5" fill="#FFFFFF" />
+                                    <ellipse cx="76" cy="109" rx="2" ry="2" fill="#FFFFFF" />
+                                </g>
+                                <g style="transform-origin: 128px 105px; animation: blink 4s infinite;">
+                                    <ellipse cx="128" cy="105" rx="12" ry="12" fill="#0f172a" />
+                                    <ellipse cx="124" cy="101" rx="4.5" ry="4.5" fill="#FFFFFF" />
+                                    <ellipse cx="132" cy="109" rx="2" ry="2" fill="#FFFFFF" />
+                                </g>
+                                <polygon points="97,110 103,110 100,113" fill="#f472b6" />
+                                <path d="M 92,116 Q 96,121 100,116 Q 104,121 108,116" fill="none" stroke="#0f172a"
+                                    stroke-width="2.5" stroke-linecap="round" />
+                                <path d="M 35 95 A 72 72 0 0 1 165 95" fill="none" stroke="#1a73ba" stroke-width="12"
+                                    stroke-linecap="round" />
+                                <rect x="23" y="75" width="20" height="45" rx="10" fill="#06b6d4" />
+                                <rect x="157" y="75" width="20" height="45" rx="10" fill="#06b6d4" />
+                                <rect x="40" y="80" width="8" height="35" rx="4" fill="#FFFFFF" opacity="0.9" />
+                                <rect x="152" y="80" width="8" height="35" rx="4" fill="#FFFFFF" opacity="0.9" />
+                            </g>
+                            <g>
+                                <path d="M 94 130 L 55 110 L 55 165 L 94 190 Z" fill="#0d5a9e" stroke="#093c6b"
+                                    stroke-width="2" stroke-linejoin="round" />
+                                <path d="M 106 130 L 145 110 L 145 165 L 106 190 Z" fill="#0d5a9e" stroke="#093c6b"
+                                    stroke-width="2" stroke-linejoin="round" />
+                                <path d="M 94 130 L 106 130 L 106 190 L 94 190 Z" fill="#1a73ba" stroke="#093c6b"
+                                    stroke-width="2" stroke-linejoin="round" />
+                                <line x1="94" y1="140" x2="106" y2="140" stroke="#2dd4bf" stroke-width="1.5" />
+                                <line x1="94" y1="180" x2="106" y2="180" stroke="#2dd4bf" stroke-width="1.5" />
+                                <path d="M 89 133 L 61 119 L 61 161 L 89 179 Z" fill="none" stroke="#2dd4bf"
+                                    stroke-width="1.5" stroke-linejoin="round" opacity="0.6" />
+                                <path d="M 111 133 L 139 119 L 139 161 L 111 179 Z" fill="none" stroke="#2dd4bf"
+                                    stroke-width="1.5" stroke-linejoin="round" />
+                                <path d="M 116 142 L 133 133 L 133 137 L 116 146 Z" fill="#2dd4bf" />
+                                <circle cx="125" cy="155" r="3.5" fill="#2dd4bf" />
+                                <path d="M 97 190 L 97 198 L 100 195 L 103 198 L 103 190 Z" fill="#2ecc71" />
+                            </g>
+                            <circle cx="50" cy="140" r="12" fill="#FFFFFF" stroke="#F0F0F0" stroke-width="2" />
+                            <circle cx="150" cy="140" r="12" fill="#FFFFFF" stroke="#F0F0F0" stroke-width="2" />
+                        </svg>
+                    </div>
+
+                    <!-- Floating Badges -->
+                    <div class="float-badge badge-1">
+                        <div class="badge-icon teal"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                stroke="#2dd4bf" stroke-width="2">
+                                <path
+                                    d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" />
+                            </svg></div> AI Voice Cloning
+                    </div>
+                    <div class="float-badge badge-2">
+                        <div class="badge-icon blue"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                stroke="#06b6d4" stroke-width="2">
+                                <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" />
+                            </svg></div> Instant Generation
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- THE TRANSFORMATION ENGINE (High-Budget Marquee Animation) -->
+        <section class="transformation-engine">
+
+            <div class="engine-container">
+
+                <!-- Left Side: Incoming Text Marquee -->
+                <div class="marquee-wrapper text-marquee-wrapper">
+                    <div class="marquee-track">
+                        <!-- Duplicated for infinite loop -->
+                        <span class="incoming-text">Chapter One. Mr. Jones, of the Manor Farm, had locked the hen-houses
+                            for the night, but was too drunk to remember to shut the popholes. With the ring of light
+                            from his lantern dancing from side to side, he lurched across the yard...</span>
+                        <span class="incoming-text">Chapter One. Mr. Jones, of the Manor Farm, had locked the hen-houses
+                            for the night, but was too drunk to remember to shut the popholes. With the ring of light
+                            from his lantern dancing from side to side, he lurched across the yard...</span>
+                    </div>
+                    <!-- Fade overlay to blend it smoothly -->
+                    <div class="fade-overlay left"></div>
+                </div>
+
+                <!-- Center: The Minimalist AI Conversion Lens -->
+                <div class="conversion-node reveal-scale">
+
+                    <!-- Sleek tracking rings -->
+                    <div class="tracking-ring r2"></div>
+                    <div class="tracking-ring r1"></div>
+
+                    <!-- High-end glowing dark lens -->
+                    <div class="ai-lens">
+                        <div class="lens-glow-layer"></div>
+                        <div class="lens-grid"></div>
+                        <div class="core-processing-dot"></div>
+                    </div>
+
+                    <!-- Connection nodes where text hits and audio leaves -->
+                    <div class="connector left-conn"></div>
+                    <div class="connector right-conn"></div>
+                </div>
+                <!-- Right Side: Outgoing Voice Audio Spectrum Marquee -->
+                <div class="marquee-wrapper wave-marquee-wrapper">
+                    <!-- Fade overlay for smooth start -->
+                    <div class="fade-overlay right"></div>
+                    <div class="spectrum-track">
+                        <div class="spectrum-group">
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                        </div>
+                        <div class="spectrum-group">
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                        </div>
+                        <div class="spectrum-group">
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                        </div>
+                        <div class="spectrum-group">
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                        </div>
+                        <div class="spectrum-group">
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            </div>
+
+            <div class="engine-caption reveal-up">
+                <p>Your words go in. A voice you love comes out. Like magic, but real.</p>
+            </div>
+
+        </section>
+
+
+
+
+
+
+        <!-- Creative Storytelling Section -->
+        <section class="story-immersion">
+            <div class="immersion-bg-glow"></div>
+
+            <div class="immersion-header reveal-up">
+                <h2>One story. Infinite voices.</h2>
+                <p>Feel how the exact same text changes completely with the right narrator. Try it.</p>
+            </div>
+
+            <div class="immersion-content">
+                <div class="passage-container reveal-up delay-1">
+                    <div class="passage-quote">"</div>
+                    <p class="passage-text" id="target-passage">
+                        <span>It</span> <span>was</span> <span>a</span> <span>dark</span> <span>and</span>
+                        <span>stormy</span> <span>night.</span> <span>The</span> <span>wind</span> <span>howled</span>
+                        <span>through</span> <span>the</span> <span>ancient</span> <span>halls,</span>
+                        <span>carrying</span> <span>whispers</span> <span>of</span> <span>those</span> <span>who</span>
+                        <span>came</span> <span>before.</span> <span>She</span> <span>opened</span> <span>the</span>
+                        <span>leather-bound</span> <span>book,</span> <span>and</span> <span>the</span>
+                        <span>first</span> <span>words</span> <span>changed</span> <span>everything.</span>
+                    </p>
+
+                    <div class="live-visualizer">
+                        <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+                    </div>
+                </div>
+
+                <div class="narrators-list reveal-up delay-2">
+                    <button class="immersion-btn" data-voice="/jackk.wav" data-color="#2dd4bf">
+                        <div class="ib-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2">
+                                <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" />
+                                <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" />
+                            </svg></div>
+                        <div class="ib-text">
+                            <span class="ib-title">Jack</span>
+                            <span class="ib-desc">Deep Storyteller</span>
+                        </div>
+                    </button>
+
+                    <button class="immersion-btn" data-voice="/sarahh.wav" data-color="#06b6d4">
+                        <div class="ib-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10" />
+                                <path d="M8 14s1.5 2 4 2 4-2 4-2" />
+                                <line x1="9" y1="9" x2="9.01" y2="9" />
+                                <line x1="15" y1="9" x2="15.01" y2="9" />
+                            </svg></div>
+                        <div class="ib-text">
+                            <span class="ib-title">Sarah</span>
+                            <span class="ib-desc">Smooth &amp; Light</span>
+                        </div>
+                    </button>
+
+                    <button class="immersion-btn" data-voice="/friedrichh.wav" data-color="#f59e0b">
+                        <div class="ib-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2">
+                                <path d="M12 2L2 7l10 5 10-5-10-5z" />
+                                <path d="M2 17l10 5 10-5" />
+                                <path d="M2 12l10 5 10-5" />
+                            </svg></div>
+                        <div class="ib-text">
+                            <span class="ib-title">Friedrich</span>
+                            <span class="ib-desc">Sarcastic Villain</span>
+                        </div>
+                    </button>
+
+                    <button class="immersion-btn" data-voice="/juliann.wav" data-color="#a78bfa">
+                        <div class="ib-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2">
+                                <path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z" />
+                                <path d="M19 10v2a7 7 0 0 1-14 0v-2" />
+                                <line x1="12" y1="19" x2="12" y2="23" />
+                                <line x1="8" y1="23" x2="16" y2="23" />
+                            </svg></div>
+                        <div class="ib-text">
+                            <span class="ib-title">Julian</span>
+                            <span class="ib-desc">Professional Narrator</span>
+                        </div>
+                    </button>
+
+                    <button class="immersion-btn" data-voice="/santaa.wav" data-color="#ef4444">
+                        <div class="ib-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2">
+                                <polygon
+                                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                            </svg></div>
+                        <div class="ib-text">
+                            <span class="ib-title">Santa</span>
+                            <span class="ib-desc">Holiday Magic</span>
+                        </div>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Voice Creator Showcase (Cinematic Apple Style) -->
+        <section class="voice-synthesis-premium">
+            <div class="vs-glow"></div>
+
+            <div class="vs-container">
+                <div class="vs-header reveal-up">
+                    <p class="vs-eyebrow">The Synthesis Engine</p>
+                    <h2 class="vs-title">Imagine a voice.<br><span class="vs-gradient">We materialize it.</span></h2>
+                    <p class="vs-subtitle">
+                        No voice actors. No generic presets.<br>
+                        Just describe the character in your head, and our AI brings them to life in seconds.
+                    </p>
+                </div>
+
+                <div class="vs-showcase reveal-up delay-1">
+                    <div class="vs-card">
+                        <div class="vs-card-header">
+                            <div class="vs-mac-dots">
+                                <span></span><span></span><span></span>
+                            </div>
+                            <div class="vs-meta-right">
+                                <div class="vs-model-id" id="vsModelId">#M_892A</div>
+                                <div class="vs-status">
+                                    <span class="vs-pulse"></span>
+                                    <span id="vsStatusText">Generating Voice Model...</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="vs-card-body">
+                            <div class="vs-prompt">
+                                <span class="vs-prompt-label">Prompt:</span>
+                                <p class="vs-typing-text" id="vsTypingText"></p>
+                            </div>
+
+                            <div class="vs-waveform-container" id="vsWaveformContainer">
+                                <div class="vs-waveform" id="vsWaveform">
+                                    <!-- Populated by JS -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Infinite Content Showcase (Ultra-Premium Zero Gravity) -->
+        <section class="iu-premium" id="infinite-universe">
+            <div class="iu-bg-glow"></div>
+
+            <div class="iu-container">
+                <div class="iu-header reveal-up">
+                    <h2 class="iu-title">Every story.<br><span class="iu-gradient">Your library.</span></h2>
+                    <p class="iu-subtitle">
+                        Thousands of timeless classics, ready to hear in any voice.<br>
+                        Or bring your own — PDFs, EPUBs, plain text.<br>
+                        If you can read it, Audifyme can speak it.
+                    </p>
+                </div>
+
+                <div class="iu-interactive-zone reveal-up delay-1">
+                    <div class="iu-orbitals">
+                        <!-- 3D Book 1 (Top Left) -->
+                        <div class="iu-book-wrapper"
+                            style="--delay: 0s; --y-offset: -20px; --rot-x: 10deg; --rot-y: -20deg; --rot-z: 15deg; --x-dir: -0.707; --y-dir: -0.707;">
+                            <div class="iu-3d-book" style="--book-color: #a78bfa;">
+                                <div class="iu-face iu-front">The Great<br>Gatsby</div>
+                                <div class="iu-face iu-back"></div>
+                                <div class="iu-face iu-spine"></div>
+                                <div class="iu-face iu-page-right"></div>
+                                <div class="iu-face iu-page-top"></div>
+                                <div class="iu-face iu-page-bottom"></div>
+                            </div>
+                        </div>
+
+                        <!-- 3D Book 2 (Top) -->
+                        <div class="iu-book-wrapper iu-desktop-only"
+                            style="--delay: -3s; --y-offset: 15px; --rot-x: 25deg; --rot-y: 10deg; --rot-z: -5deg; --x-dir: 0; --y-dir: -1;">
+                            <div class="iu-3d-book" style="--book-color: #ec4899;">
+                                <div class="iu-face iu-front">Moby<br>Dick</div>
+                                <div class="iu-face iu-back"></div>
+                                <div class="iu-face iu-spine"></div>
+                                <div class="iu-face iu-page-right"></div>
+                                <div class="iu-face iu-page-top"></div>
+                                <div class="iu-face iu-page-bottom"></div>
+                            </div>
+                        </div>
+
+                        <!-- 3D Book 3 (Top Right) -->
+                        <div class="iu-book-wrapper"
+                            style="--delay: -1s; --y-offset: 25px; --rot-x: 15deg; --rot-y: 25deg; --rot-z: -15deg; --x-dir: 0.707; --y-dir: -0.707;">
+                            <div class="iu-3d-book" style="--book-color: #2dd4bf;">
+                                <div class="iu-face iu-front">Frankenstein</div>
+                                <div class="iu-face iu-back"></div>
+                                <div class="iu-face iu-spine"></div>
+                                <div class="iu-face iu-page-right"></div>
+                                <div class="iu-face iu-page-top"></div>
+                                <div class="iu-face iu-page-bottom"></div>
+                            </div>
+                        </div>
+
+                        <!-- 3D Book 4 (Right) -->
+                        <div class="iu-book-wrapper iu-desktop-only"
+                            style="--delay: -4s; --y-offset: -25px; --rot-x: -10deg; --rot-y: -35deg; --rot-z: -10deg; --x-dir: 1; --y-dir: 0;">
+                            <div class="iu-3d-book" style="--book-color: #f59e0b;">
+                                <div class="iu-face iu-front">Pride &<br>Prejudice</div>
+                                <div class="iu-face iu-back"></div>
+                                <div class="iu-face iu-spine"></div>
+                                <div class="iu-face iu-page-right"></div>
+                                <div class="iu-face iu-page-top"></div>
+                                <div class="iu-face iu-page-bottom"></div>
+                            </div>
+                        </div>
+
+                        <!-- 3D Book 5 (Bottom Right) -->
+                        <div class="iu-book-wrapper"
+                            style="--delay: -6s; --y-offset: 20px; --rot-x: 10deg; --rot-y: 30deg; --rot-z: -8deg; --x-dir: 0.707; --y-dir: 0.707;">
+                            <div class="iu-3d-book" style="--book-color: #ef4444;">
+                                <div class="iu-face iu-front">Dracula</div>
+                                <div class="iu-face iu-back"></div>
+                                <div class="iu-face iu-spine"></div>
+                                <div class="iu-face iu-page-right"></div>
+                                <div class="iu-face iu-page-top"></div>
+                                <div class="iu-face iu-page-bottom"></div>
+                            </div>
+                        </div>
+
+                        <!-- 3D Book 6 (Bottom) -->
+                        <div class="iu-book-wrapper iu-desktop-only"
+                            style="--delay: -2s; --y-offset: -15px; --rot-x: -20deg; --rot-y: 20deg; --rot-z: 10deg; --x-dir: 0; --y-dir: 1;">
+                            <div class="iu-3d-book" style="--book-color: #10b981;">
+                                <div class="iu-face iu-front">The<br>Odyssey</div>
+                                <div class="iu-face iu-back"></div>
+                                <div class="iu-face iu-spine"></div>
+                                <div class="iu-face iu-page-right"></div>
+                                <div class="iu-face iu-page-top"></div>
+                                <div class="iu-face iu-page-bottom"></div>
+                            </div>
+                        </div>
+
+                        <!-- 3D Book 7 (Bottom Left) -->
+                        <div class="iu-book-wrapper"
+                            style="--delay: -5s; --y-offset: -10px; --rot-x: 15deg; --rot-y: -15deg; --rot-z: 15deg; --x-dir: -0.707; --y-dir: 0.707;">
+                            <div class="iu-3d-book" style="--book-color: #06b6d4;">
+                                <div class="iu-face iu-front">The Art<br>of War</div>
+                                <div class="iu-face iu-back"></div>
+                                <div class="iu-face iu-spine"></div>
+                                <div class="iu-face iu-page-right"></div>
+                                <div class="iu-face iu-page-top"></div>
+                                <div class="iu-face iu-page-bottom"></div>
+                            </div>
+                        </div>
+
+                        <!-- 3D Book 8 (Left) -->
+                        <div class="iu-book-wrapper iu-desktop-only"
+                            style="--delay: -7s; --y-offset: -18px; --rot-x: 5deg; --rot-y: -25deg; --rot-z: -5deg; --x-dir: -1; --y-dir: 0;">
+                            <div class="iu-3d-book" style="--book-color: #3b82f6;">
+                                <div class="iu-face iu-front">1984</div>
+                                <div class="iu-face iu-back"></div>
+                                <div class="iu-face iu-spine"></div>
+                                <div class="iu-face iu-page-right"></div>
+                                <div class="iu-face iu-page-top"></div>
+                                <div class="iu-face iu-page-bottom"></div>
+                            </div>
+                        </div>
+
+                        <!-- Center Void Core (Ultra High Budget) -->
+                        <div class="iu-void-core">
+
+                            <!-- The multi-layered interactive eye -->
+                            <div class="iu-event-horizon">
+                                <!-- Inner starry void and glowing iris -->
+                                <div class="iu-iris-glow"></div>
+                                <div class="iu-star-field inner-stars"></div>
+                                <div class="iu-star-field outer-stars"></div>
+                                <div class="iu-portal-ring pr-1"></div>
+                                <div class="iu-portal-ring pr-2"></div>
+                                <div class="iu-core-pupil"></div>
+                            </div>
+
+                            <div class="iu-accretion-disk"></div>
+
+                            <div class="iu-drop-ui">
+                                <span class="iu-drop-text">or bring<br>your own</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section reveal-up">
+            <h2>Your next story<br>is waiting.</h2>
+            <a href="#" class="btn-large">Start Listening Free</a>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="brand"><img src="/logo.png" alt="Audifyme" class="footer-logo">Audifyme</div>
+            <div class="copyright">© 2026 Audifyme. Any book. Any voice.</div>
+        </div>
+    </footer>
+
+    <script type="module" src="/src/main.ts"></script>
+</body>
+
+</html>
