@@ -60,6 +60,15 @@ let currentCard: HTMLElement | null = null;
 
 const pauseIcon = '<svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><rect x="6" y="4" width="4" height="16"/><rect x="14" y="4" width="4" height="16"/></svg>';
 const playIcon = '<svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>';
+const appBaseUrl = new URL(import.meta.env.BASE_URL, window.location.href);
+
+function resolveVoiceSrc(voiceSrc: string) {
+    if (!voiceSrc.startsWith('/')) {
+        return voiceSrc;
+    }
+
+    return new URL(voiceSrc.slice(1), appBaseUrl).toString();
+}
 
 function stopCurrentPlayback() {
     if (currentAudio) {
@@ -92,7 +101,7 @@ document.querySelectorAll('.voice-card').forEach(card => {
         stopImmersionPlayback(); // Also stop the story immersion if playing
 
         // Play this card
-        const audio = new Audio(voiceSrc);
+        const audio = new Audio(resolveVoiceSrc(voiceSrc));
         currentAudio = audio;
         currentCard = card as HTMLElement;
 
@@ -201,7 +210,7 @@ document.querySelectorAll('.immersion-btn').forEach(btn => {
         stopImmersionPlayback();
         stopCurrentPlayback(); // Also stop carousel player if playing
 
-        immersionAudio = new Audio(voiceSrc);
+        immersionAudio = new Audio(resolveVoiceSrc(voiceSrc));
         currentImmersionBtn = btn as HTMLElement;
 
         btn.classList.add('active');
