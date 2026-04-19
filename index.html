@@ -10,188 +10,180 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@300;400;500;600&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500&family=Caveat:wght@500;600&display=swap"
         rel="stylesheet">
 </head>
 
 <body id="top">
 
+    <div id="scroll-progress" aria-hidden="true"></div>
+
     <!-- Floating Pill Navigation -->
     <nav class="nav-pill reveal-fade">
         <div class="nav-brand"><img src="/logo.png" alt="Audifyme" class="nav-logo">Audifyme</div>
         <div class="nav-links">
-            <a href="#how-it-works">How It Works</a>
-            <a href="#features">Features</a>
+            <a href="#features">The app</a>
+            <a href="#features">Voices</a>
+            <a href="#pricing">Pricing</a>
+            <a href="#faq">FAQ</a>
         </div>
-        <a href="#top" class="btn-primary">Get the App</a>
+        <a href="#top" class="btn-primary">Get the app -></a>
     </nav>
 
     <main>
-        <!-- Wispr-Style Hero Division -->
+        <!-- Hero - BookTok x software-craft rebuild -->
         <section class="hero-section">
+            <div class="hero-glow-amber" aria-hidden="true"></div>
+            <div class="hero-glow-teal" aria-hidden="true"></div>
+            <p class="hero-margin-note" aria-hidden="true">same book. different voice.<br>completely different read.</p>
             <div class="hero-container">
 
+                <!-- Left column -->
                 <div class="hero-content">
-                    <h1 class="reveal-up">Any book.<br><span class="italic">Any voice.</span></h1>
-                    <p class="hero-subtitle reveal-up delay-1">Hear your favorite stories narrated by the people you
-                        love most. Your mom, your best friend, a celebrity — just record 30 seconds and Audifyme brings
-                        any text to life in their voice.</p>
+                    <p class="hero-eyebrow reveal-up">
+                        <span class="hero-eyebrow-mark">I</span>
+                        <span>for readers who forgot they love reading</span>
+                    </p>
 
-                    <div class="hero-actions reveal-up delay-2">
-                        <a href="#" class="btn-large">Start Listening Free</a>
+                    <h1 class="hero-headline reveal-up delay-1">
+                        <span>Any book,</span>
+                        <span class="serif-italic">in the voice of someone</span>
+                        <span class="warm">you love.</span>
+                    </h1>
+
+                    <p class="hero-sub reveal-up delay-2">Any book. Any voice. Your dad, your best friend, that professor with the calming accent — or someone whose voice you've definitely heard before<sup class="hero-aster">*</sup>. Record 30 seconds, or just describe a voice in a sentence. We do the rest.</p>
+
+                    <div class="hero-cta-row reveal-up delay-3">
+                        <a href="#" class="btn-large">Start listening - it's free</a>
+                        <a href="#features" class="hero-sub-cta">or hear it first below</a>
                     </div>
 
-                    <p class="hero-microcopy reveal-up delay-3">Available on iOS. No credit card needed.</p>
+                    <p class="hero-micro reveal-up delay-3">iPhone · no credit card · you can start as a guest</p>
+                    <p class="hero-disclaimer reveal-up delay-3"><sup class="hero-aster">*</sup> if it's a real person, get their permission first. invented voices don't need one.</p>
+
+                    <ul class="hero-trust reveal-up delay-3">
+                        <li><span class="star">*</span> 4.8 App Store</li>
+                        <li>12,400+ books ready to hear</li>
+                        <li>Made in Switzerland</li>
+                    </ul>
                 </div>
 
-                <!-- Mascot with Glow -->
-                <div class="hero-visual reveal-scale delay-2">
-                    <div class="mascot-glow"></div>
-                    <div class="mascot-wrapper">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="100%" height="100%">
-                            <style>
-                                @keyframes twinkle {
-
-                                    0%,
-                                    100% {
-                                        opacity: 1;
-                                        transform: scale(1);
-                                    }
-
-                                    50% {
-                                        opacity: 0.3;
-                                        transform: scale(0.7);
-                                    }
-                                }
-
-                                @keyframes blink {
-
-                                    0%,
-                                    94%,
-                                    100% {
-                                        transform: scaleY(1);
-                                    }
-
-                                    97% {
-                                        transform: scaleY(0.1);
-                                    }
-                                }
-
-                                @keyframes bob {
-
-                                    0%,
-                                    100% {
-                                        transform: translateY(0px);
-                                    }
-
-                                    50% {
-                                        transform: translateY(-3px);
-                                    }
-                                }
-
-                                .sparkle-1 {
-                                    animation: twinkle 2s ease-in-out infinite;
-                                    transform-origin: 45px 40px;
-                                }
-
-                                .sparkle-2 {
-                                    animation: twinkle 2.5s ease-in-out infinite 0.5s;
-                                    transform-origin: 155px 25px;
-                                }
-
-                                .sparkle-3 {
-                                    animation: twinkle 2.2s ease-in-out infinite 1s;
-                                    transform-origin: 170px 135px;
-                                }
-
-                                .cat-head {
-                                    animation: bob 3s ease-in-out infinite;
-                                }
-                            </style>
-                            <circle cx="100" cy="100" r="95" fill="#111827" />
-                            <g fill="#2dd4bf">
-                                <path class="sparkle-1"
-                                    d="M 40 40 Q 45 40 45 35 Q 45 40 50 40 Q 45 40 45 45 Q 45 40 40 40" />
-                                <path class="sparkle-2"
-                                    d="M 150 25 Q 155 25 155 20 Q 155 25 160 25 Q 155 25 155 30 Q 155 25 150 25" />
-                                <path class="sparkle-3"
-                                    d="M 165 135 Q 170 135 170 130 Q 170 135 175 135 Q 170 135 170 140 Q 170 135 165 135" />
-                            </g>
-                            <ellipse cx="100" cy="140" rx="45" ry="40" fill="#FFFFFF" />
-                            <g class="cat-head">
-                                <polygon points="40,80 30,20 80,60" fill="#FFFFFF" />
-                                <polygon points="43,70 35,30 72,58" fill="#f472b6" />
-                                <polygon points="160,80 170,20 120,60" fill="#FFFFFF" />
-                                <polygon points="157,70 165,30 128,58" fill="#f472b6" />
-                                <ellipse cx="100" cy="100" rx="65" ry="50" fill="#FFFFFF" />
-                                <g stroke="#0f172a" stroke-width="2" stroke-linecap="round" opacity="0.3">
-                                    <line x1="38" y1="98" x2="15" y2="93" />
-                                    <line x1="35" y1="105" x2="10" y2="105" />
-                                    <line x1="38" y1="112" x2="15" y2="117" />
-                                    <line x1="162" y1="98" x2="185" y2="93" />
-                                    <line x1="165" y1="105" x2="190" y2="105" />
-                                    <line x1="162" y1="112" x2="185" y2="117" />
-                                </g>
-                                <ellipse cx="58" cy="112" rx="10" ry="6" fill="#f472b6" opacity="0.6" />
-                                <ellipse cx="142" cy="112" rx="10" ry="6" fill="#f472b6" opacity="0.6" />
-                                <g style="transform-origin: 72px 105px; animation: blink 4s infinite;">
-                                    <ellipse cx="72" cy="105" rx="12" ry="12" fill="#0f172a" />
-                                    <ellipse cx="68" cy="101" rx="4.5" ry="4.5" fill="#FFFFFF" />
-                                    <ellipse cx="76" cy="109" rx="2" ry="2" fill="#FFFFFF" />
-                                </g>
-                                <g style="transform-origin: 128px 105px; animation: blink 4s infinite;">
-                                    <ellipse cx="128" cy="105" rx="12" ry="12" fill="#0f172a" />
-                                    <ellipse cx="124" cy="101" rx="4.5" ry="4.5" fill="#FFFFFF" />
-                                    <ellipse cx="132" cy="109" rx="2" ry="2" fill="#FFFFFF" />
-                                </g>
-                                <polygon points="97,110 103,110 100,113" fill="#f472b6" />
-                                <path d="M 92,116 Q 96,121 100,116 Q 104,121 108,116" fill="none" stroke="#0f172a"
-                                    stroke-width="2.5" stroke-linecap="round" />
-                                <path d="M 35 95 A 72 72 0 0 1 165 95" fill="none" stroke="#1a73ba" stroke-width="12"
-                                    stroke-linecap="round" />
-                                <rect x="23" y="75" width="20" height="45" rx="10" fill="#06b6d4" />
-                                <rect x="157" y="75" width="20" height="45" rx="10" fill="#06b6d4" />
-                                <rect x="40" y="80" width="8" height="35" rx="4" fill="#FFFFFF" opacity="0.9" />
-                                <rect x="152" y="80" width="8" height="35" rx="4" fill="#FFFFFF" opacity="0.9" />
-                            </g>
-                            <g>
-                                <path d="M 94 130 L 55 110 L 55 165 L 94 190 Z" fill="#0d5a9e" stroke="#093c6b"
-                                    stroke-width="2" stroke-linejoin="round" />
-                                <path d="M 106 130 L 145 110 L 145 165 L 106 190 Z" fill="#0d5a9e" stroke="#093c6b"
-                                    stroke-width="2" stroke-linejoin="round" />
-                                <path d="M 94 130 L 106 130 L 106 190 L 94 190 Z" fill="#1a73ba" stroke="#093c6b"
-                                    stroke-width="2" stroke-linejoin="round" />
-                                <line x1="94" y1="140" x2="106" y2="140" stroke="#2dd4bf" stroke-width="1.5" />
-                                <line x1="94" y1="180" x2="106" y2="180" stroke="#2dd4bf" stroke-width="1.5" />
-                                <path d="M 89 133 L 61 119 L 61 161 L 89 179 Z" fill="none" stroke="#2dd4bf"
-                                    stroke-width="1.5" stroke-linejoin="round" opacity="0.6" />
-                                <path d="M 111 133 L 139 119 L 139 161 L 111 179 Z" fill="none" stroke="#2dd4bf"
-                                    stroke-width="1.5" stroke-linejoin="round" />
-                                <path d="M 116 142 L 133 133 L 133 137 L 116 146 Z" fill="#2dd4bf" />
-                                <circle cx="125" cy="155" r="3.5" fill="#2dd4bf" />
-                                <path d="M 97 190 L 97 198 L 100 195 L 103 198 L 103 190 Z" fill="#2ecc71" />
-                            </g>
-                            <circle cx="50" cy="140" r="12" fill="#FFFFFF" stroke="#F0F0F0" stroke-width="2" />
-                            <circle cx="150" cy="140" r="12" fill="#FFFFFF" stroke="#F0F0F0" stroke-width="2" />
-                        </svg>
+                <!-- Right column - tilted iPhone + floating voice chips -->
+                <div class="hero-stage reveal-scale delay-2">
+                    <!-- Dog-eared book badge -->
+                    <div class="hero-book-badge" aria-hidden="true">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+                        <span>12,400 books</span>
                     </div>
 
-                    <!-- Floating Badges -->
-                    <div class="float-badge badge-1">
-                        <div class="badge-icon teal"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"
-                                stroke="#2dd4bf" stroke-width="2">
-                                <path
-                                    d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" />
-                            </svg></div> AI Voice Cloning
+                    <!-- The phone -->
+                    <div class="iphone-mock">
+                        <div class="iphone-frame">
+                            <div class="iphone-notch"></div>
+                            <div class="iphone-screen">
+                                <div class="ip-status">
+                                    <span>9:41</span>
+                                    <span class="ip-status-right">
+                                        <span class="ip-signal"></span>
+                                        <span class="ip-wifi"></span>
+                                        <span class="ip-battery"></span>
+                                    </span>
+                                </div>
+                                <div class="ip-np">
+                                    <div class="ip-np-cover">
+                                        <div class="ip-np-cover-inner">
+                                            <span class="ip-np-cover-label">NOVEL</span>
+                                            <span class="ip-np-cover-title">To Kill<br>a Mockingbird</span>
+                                            <span class="ip-np-cover-author">Harper Lee</span>
+                                        </div>
+                                    </div>
+                                    <p class="ip-np-narrator">narrated by <strong id="ip-narrator">Mom</strong></p>
+                                    <h3 class="ip-np-title">Chapter 3 / "Calpurnia"</h3>
+                                    <div class="ip-np-wave"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+                                    <div class="ip-np-time">
+                                        <span>12:04</span>
+                                        <span class="ip-np-time-bar"><i></i></span>
+                                        <span>38:22</span>
+                                    </div>
+                                    <div class="ip-np-controls">
+                                        <button class="ip-btn ip-btn-sm" aria-label="Previous">&lt;&lt;</button>
+                                        <button class="ip-btn ip-btn-lg" aria-label="Play">&gt;</button>
+                                        <button class="ip-btn ip-btn-sm" aria-label="Next">&gt;&gt;</button>
+                                    </div>
+                                    <div class="ip-np-chapter">
+                                        <span>CHAPTER</span>
+                                        <span>03 / 31</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="float-badge badge-2">
-                        <div class="badge-icon blue"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"
-                                stroke="#06b6d4" stroke-width="2">
-                                <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" />
-                            </svg></div> Instant Generation
+
+                    <!-- Floating voice chips -->
+                    <div class="hero-chip hero-chip-mom">
+                        <div class="hero-chip-avatar" style="--a: #e8a87c">M</div>
+                        <div class="hero-chip-body">
+                            <span class="hero-chip-name">Mom</span>
+                            <span class="hero-chip-meta">voice · 38 sec sample</span>
+                        </div>
+                        <span class="hero-chip-dot"></span>
+                    </div>
+                    <div class="hero-chip hero-chip-jack">
+                        <div class="hero-chip-avatar" style="--a: #7f9b6d">?</div>
+                        <div class="hero-chip-body">
+                            <span class="hero-chip-name">You know the one</span>
+                            <span class="hero-chip-meta">voice · now narrating Dune</span>
+                        </div>
+                        <span class="hero-chip-wave"><i></i><i></i><i></i><i></i></span>
                     </div>
                 </div>
             </div>
+        </section>
+
+        <!-- Currently-listening ticker -->
+        <section class="ticker-section" aria-label="Currently listening">
+            <div class="ticker-frame">
+                <span class="ticker-label">
+                    <span class="ticker-live-dot" aria-hidden="true"></span>
+                    <span class="ticker-label-stack">
+                        <span class="ticker-label-text">Listening right now</span>
+                        <span class="ticker-count">2,418 people</span>
+                    </span>
+                </span>
+                <div class="ticker-track">
+                    <div class="ticker-group">
+                        <span class="ticker-item"><span class="ticker-avatar" style="--a:#e8a87c">S</span><span class="ti-text"><strong class="ti-name">Sarah</strong> · <em>The Bell Jar</em> <span class="ti-chapter">ch. 7</span> <span class="ticker-sep">—</span> voice of <strong>her sister Emma</strong></span></span>
+                        <span class="ticker-item"><span class="ticker-avatar" style="--a:#7f9b6d">M</span><span class="ti-text"><strong class="ti-name">Marcus</strong> · <em>Meditations</em> <span class="ti-chapter">bk. III</span> <span class="ticker-sep">—</span> voice of <strong>his dad</strong></span></span>
+                        <span class="ticker-item"><span class="ticker-avatar" style="--a:#b7a17a">L</span><span class="ti-text"><strong class="ti-name">Lena</strong> · <em>Pride &amp; Prejudice</em> <span class="ti-chapter">ch. 14</span> <span class="ticker-sep">—</span> voice of <strong>Julian, pro narrator</strong></span></span>
+                        <span class="ticker-item"><span class="ticker-avatar" style="--a:#8fa878">J</span><span class="ti-text"><strong class="ti-name">Jake</strong> · <em>Crime &amp; Punishment</em> <span class="ti-chapter">pt. II</span> <span class="ticker-sep">—</span> voice of <strong>a certain wrestler-turned-actor 🍋</strong></span></span>
+                        <span class="ticker-item"><span class="ticker-avatar" style="--a:#e4a5a5">A</span><span class="ti-text"><strong class="ti-name">Ana</strong> · <em>Goodnight Moon</em> <span class="ti-chapter">p. 1</span> <span class="ticker-sep">—</span> voice of <strong>her late grandmother, from old voicemails</strong></span></span>
+                        <span class="ticker-item"><span class="ticker-avatar" style="--a:#f59e0b">D</span><span class="ti-text"><strong class="ti-name">Diego</strong> · <em>Dune</em> <span class="ti-chapter">ch. 11</span> <span class="ticker-sep">—</span> voice of <strong>his older brother</strong></span></span>
+                        <span class="ticker-item"><span class="ticker-avatar" style="--a:#6f8d61">P</span><span class="ti-text"><strong class="ti-name">Priya</strong> · <em>Beloved</em> <span class="ti-chapter">ch. 5</span> <span class="ticker-sep">—</span> voice of <strong>her mother</strong></span></span>
+                        <span class="ticker-item"><span class="ticker-avatar" style="--a:#c09a88">N</span><span class="ti-text"><strong class="ti-name">Noah</strong> · <em>The Hobbit</em> <span class="ti-chapter">ch. 1</span> <span class="ticker-sep">—</span> voice of <strong>his dad</strong> <span class="ti-tag">(switched from pro narrator)</span></span></span>
+                        <span class="ticker-item"><span class="ticker-avatar" style="--a:#a8c8b5">R</span><span class="ti-text"><strong class="ti-name">Rosa</strong> · <em>The Odyssey</em> <span class="ti-chapter">bk. IX</span> <span class="ticker-sep">—</span> voice of <strong>a familiar British nature-doc narrator 🌿</strong></span></span>
+                        <span class="ticker-item"><span class="ticker-avatar" style="--a:#d4b59e">T</span><span class="ti-text"><strong class="ti-name">Tomás</strong> · <em>The Alchemist</em> <span class="ti-chapter">ch. 3</span> <span class="ticker-sep">—</span> voice of <strong>his grandfather</strong></span></span>
+                        <span class="ticker-item"><span class="ticker-avatar" style="--a:#b8c2d0">K</span><span class="ti-text"><strong class="ti-name">Kayla</strong> · <em>1984</em> <span class="ti-chapter">pt. III</span> <span class="ticker-sep">—</span> voice of <strong>that billionaire who won't stop tweeting 🚀</strong></span></span>
+                        <span class="ticker-item"><span class="ticker-avatar" style="--a:#e0b894">H</span><span class="ti-text"><strong class="ti-name">Henry</strong> · <em>The Little Prince</em> <span class="ti-chapter">ch. 2</span> <span class="ticker-sep">—</span> voice of <strong>a gap-toothed late-night host</strong></span></span>
+                        <span class="ticker-item"><span class="ticker-avatar" style="--a:#c8a98f">E</span><span class="ti-text"><strong class="ti-name">Eli</strong> · <em>Steve Jobs</em> <span class="ti-chapter">ch. 12</span> <span class="ticker-sep">—</span> voice of <strong>the guy who said "one more thing" 🍎</strong></span></span>
+                    </div>
+                    <div class="ticker-group" aria-hidden="true">
+                        <span class="ticker-item"><span class="ticker-avatar" style="--a:#e8a87c">S</span><span class="ti-text"><strong class="ti-name">Sarah</strong> · <em>The Bell Jar</em> <span class="ti-chapter">ch. 7</span> <span class="ticker-sep">—</span> voice of <strong>her sister Emma</strong></span></span>
+                        <span class="ticker-item"><span class="ticker-avatar" style="--a:#7f9b6d">M</span><span class="ti-text"><strong class="ti-name">Marcus</strong> · <em>Meditations</em> <span class="ti-chapter">bk. III</span> <span class="ticker-sep">—</span> voice of <strong>his dad</strong></span></span>
+                        <span class="ticker-item"><span class="ticker-avatar" style="--a:#b7a17a">L</span><span class="ti-text"><strong class="ti-name">Lena</strong> · <em>Pride &amp; Prejudice</em> <span class="ti-chapter">ch. 14</span> <span class="ticker-sep">—</span> voice of <strong>Julian, pro narrator</strong></span></span>
+                        <span class="ticker-item"><span class="ticker-avatar" style="--a:#8fa878">J</span><span class="ti-text"><strong class="ti-name">Jake</strong> · <em>Crime &amp; Punishment</em> <span class="ti-chapter">pt. II</span> <span class="ticker-sep">—</span> voice of <strong>a certain wrestler-turned-actor 🍋</strong></span></span>
+                        <span class="ticker-item"><span class="ticker-avatar" style="--a:#e4a5a5">A</span><span class="ti-text"><strong class="ti-name">Ana</strong> · <em>Goodnight Moon</em> <span class="ti-chapter">p. 1</span> <span class="ticker-sep">—</span> voice of <strong>her late grandmother, from old voicemails</strong></span></span>
+                        <span class="ticker-item"><span class="ticker-avatar" style="--a:#f59e0b">D</span><span class="ti-text"><strong class="ti-name">Diego</strong> · <em>Dune</em> <span class="ti-chapter">ch. 11</span> <span class="ticker-sep">—</span> voice of <strong>his older brother</strong></span></span>
+                        <span class="ticker-item"><span class="ticker-avatar" style="--a:#6f8d61">P</span><span class="ti-text"><strong class="ti-name">Priya</strong> · <em>Beloved</em> <span class="ti-chapter">ch. 5</span> <span class="ticker-sep">—</span> voice of <strong>her mother</strong></span></span>
+                        <span class="ticker-item"><span class="ticker-avatar" style="--a:#c09a88">N</span><span class="ti-text"><strong class="ti-name">Noah</strong> · <em>The Hobbit</em> <span class="ti-chapter">ch. 1</span> <span class="ticker-sep">—</span> voice of <strong>his dad</strong> <span class="ti-tag">(switched from pro narrator)</span></span></span>
+                        <span class="ticker-item"><span class="ticker-avatar" style="--a:#a8c8b5">R</span><span class="ti-text"><strong class="ti-name">Rosa</strong> · <em>The Odyssey</em> <span class="ti-chapter">bk. IX</span> <span class="ticker-sep">—</span> voice of <strong>a familiar British nature-doc narrator 🌿</strong></span></span>
+                        <span class="ticker-item"><span class="ticker-avatar" style="--a:#d4b59e">T</span><span class="ti-text"><strong class="ti-name">Tomás</strong> · <em>The Alchemist</em> <span class="ti-chapter">ch. 3</span> <span class="ticker-sep">—</span> voice of <strong>his grandfather</strong></span></span>
+                        <span class="ticker-item"><span class="ticker-avatar" style="--a:#b8c2d0">K</span><span class="ti-text"><strong class="ti-name">Kayla</strong> · <em>1984</em> <span class="ti-chapter">pt. III</span> <span class="ticker-sep">—</span> voice of <strong>that billionaire who won't stop tweeting 🚀</strong></span></span>
+                        <span class="ticker-item"><span class="ticker-avatar" style="--a:#e0b894">H</span><span class="ti-text"><strong class="ti-name">Henry</strong> · <em>The Little Prince</em> <span class="ti-chapter">ch. 2</span> <span class="ticker-sep">—</span> voice of <strong>a gap-toothed late-night host</strong></span></span>
+                        <span class="ticker-item"><span class="ticker-avatar" style="--a:#c8a98f">E</span><span class="ti-text"><strong class="ti-name">Eli</strong> · <em>Steve Jobs</em> <span class="ti-chapter">ch. 12</span> <span class="ticker-sep">—</span> voice of <strong>the guy who said "one more thing" 🍎</strong></span></span>
+                    </div>
+                </div>
+            </div>
+            <p class="ticker-caption">Anonymized sample of today's listeners. Real people. Real voices they loved enough to keep.</p>
         </section>
 
         <!-- THE TRANSFORMATION ENGINE (High-Budget Marquee Animation) -->
@@ -355,7 +347,7 @@
             </div>
 
             <div class="engine-caption reveal-up">
-                <p>Your words go in. A voice you love comes out. Like magic, but real.</p>
+                <p><em>Text goes in. The narrator you imagined comes out.</em><br>No magic, just fifteen months of very careful software.</p>
             </div>
 
         </section>
@@ -370,8 +362,10 @@
             <div class="immersion-bg-glow"></div>
 
             <div class="immersion-header reveal-up">
-                <h2>One story. Infinite voices.</h2>
-                <p>Feel how the exact same text changes completely with the right narrator. Try it.</p>
+                <div class="chapter-marker">Chapter II · Voices</div>
+                <h2>The same sentence,<br><span class="italic">five different souls.</span></h2>
+                <p>Tap a name. The passage is reborn — and yes, you can swap narrators mid-book whenever you want.</p>
+                <p class="margin-note margin-note-wink" aria-hidden="true">a familiar voice? couldn't be.</p>
             </div>
 
             <div class="immersion-content">
@@ -390,10 +384,11 @@
                     <div class="live-visualizer">
                         <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
                     </div>
+                    <p class="margin-note" aria-hidden="true">Friedrich feels very German.</p>
                 </div>
 
                 <div class="narrators-list reveal-up delay-2">
-                    <button class="immersion-btn" data-voice="/jackk.wav" data-color="#2dd4bf">
+                    <button class="immersion-btn" data-voice="/Inworld_jack_04-19-2026 19-21-13.mp3" data-color="#7f9b6d">
                         <div class="ib-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                                 stroke="currentColor" stroke-width="2">
                                 <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" />
@@ -405,7 +400,7 @@
                         </div>
                     </button>
 
-                    <button class="immersion-btn" data-voice="/sarahh.wav" data-color="#06b6d4">
+                    <button class="immersion-btn" data-voice="/Inworld_sarah_04-19-2026 19-22-25.mp3" data-color="#b7a17a">
                         <div class="ib-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                                 stroke="currentColor" stroke-width="2">
                                 <circle cx="12" cy="12" r="10" />
@@ -419,7 +414,7 @@
                         </div>
                     </button>
 
-                    <button class="immersion-btn" data-voice="/friedrichh.wav" data-color="#f59e0b">
+                    <button class="immersion-btn" data-voice="/Inworld_friedrich_04-19-2026 19-23-38.mp3" data-color="#f59e0b">
                         <div class="ib-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                                 stroke="currentColor" stroke-width="2">
                                 <path d="M12 2L2 7l10 5 10-5-10-5z" />
@@ -432,7 +427,19 @@
                         </div>
                     </button>
 
-                    <button class="immersion-btn" data-voice="/juliann.wav" data-color="#a78bfa">
+                    <button class="immersion-btn" data-voice="/Inworld_santa_04-19-2026 19-25-52.mp3" data-color="#ef4444">
+                        <div class="ib-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2">
+                                <polygon
+                                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                            </svg></div>
+                        <div class="ib-text">
+                            <span class="ib-title">Santa</span>
+                            <span class="ib-desc">Holiday Magic</span>
+                        </div>
+                    </button>
+
+                    <button class="immersion-btn" data-voice="/Inworld_julian_04-19-2026 19-24-52.mp3" data-color="#c9a87a">
                         <div class="ib-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                                 stroke="currentColor" stroke-width="2">
                                 <path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z" />
@@ -445,18 +452,6 @@
                             <span class="ib-desc">Professional Narrator</span>
                         </div>
                     </button>
-
-                    <button class="immersion-btn" data-voice="/santaa.wav" data-color="#ef4444">
-                        <div class="ib-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                stroke="currentColor" stroke-width="2">
-                                <polygon
-                                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
-                            </svg></div>
-                        <div class="ib-text">
-                            <span class="ib-title">Santa</span>
-                            <span class="ib-desc">Holiday Magic</span>
-                        </div>
-                    </button>
                 </div>
             </div>
         </section>
@@ -467,11 +462,13 @@
 
             <div class="vs-container">
                 <div class="vs-header reveal-up">
-                    <p class="vs-eyebrow">The Synthesis Engine</p>
-                    <h2 class="vs-title">Imagine a voice.<br><span class="vs-gradient">We materialize it.</span></h2>
+                    <div class="chapter-marker">Chapter III · The Synthesis Engine</div>
+                    <p class="vs-eyebrow">Out of voice actors?</p>
+                    <h2 class="vs-title"><span class="vs-gradient">Describe one.</span></h2>
                     <p class="vs-subtitle">
                         No voice actors. No generic presets.<br>
-                        Just describe the character in your head, and our AI brings them to life in seconds.
+                        Just describe the character in your head — a dwarven blacksmith, your calmest professor,<br>
+                        or, say, <em>a charismatic wrestler who became the highest-paid actor in Hollywood</em> — and the model brings them to life in seconds.
                     </p>
                 </div>
 
@@ -513,11 +510,12 @@
 
             <div class="iu-container">
                 <div class="iu-header reveal-up">
-                    <h2 class="iu-title">Every story.<br><span class="iu-gradient">Your library.</span></h2>
+                    <div class="chapter-marker">Chapter IV · The Library</div>
+                    <h2 class="iu-title">Every book ever written.<br><span class="iu-gradient">Your library.</span></h2>
                     <p class="iu-subtitle">
-                        Thousands of timeless classics, ready to hear in any voice.<br>
-                        Or bring your own — PDFs, EPUBs, plain text.<br>
-                        If you can read it, Audifyme can speak it.
+                        Thousands of classics already in the app. Or drag in your own -<br>
+                        PDF, EPUB, a Notion export, the screenplay your friend won't stop sending you.<br>
+                        If you can read it, Audifyme can read it to you.
                     </p>
                 </div>
 
@@ -526,7 +524,7 @@
                         <!-- 3D Book 1 (Top Left) -->
                         <div class="iu-book-wrapper"
                             style="--delay: 0s; --y-offset: -20px; --rot-x: 10deg; --rot-y: -20deg; --rot-z: 15deg; --x-dir: -0.707; --y-dir: -0.707;">
-                            <div class="iu-3d-book" style="--book-color: #a78bfa;">
+                            <div class="iu-3d-book" style="--book-color: #c9a87a;">
                                 <div class="iu-face iu-front">The Great<br>Gatsby</div>
                                 <div class="iu-face iu-back"></div>
                                 <div class="iu-face iu-spine"></div>
@@ -552,7 +550,7 @@
                         <!-- 3D Book 3 (Top Right) -->
                         <div class="iu-book-wrapper"
                             style="--delay: -1s; --y-offset: 25px; --rot-x: 15deg; --rot-y: 25deg; --rot-z: -15deg; --x-dir: 0.707; --y-dir: -0.707;">
-                            <div class="iu-3d-book" style="--book-color: #2dd4bf;">
+                            <div class="iu-3d-book" style="--book-color: #7f9b6d;">
                                 <div class="iu-face iu-front">Frankenstein</div>
                                 <div class="iu-face iu-back"></div>
                                 <div class="iu-face iu-spine"></div>
@@ -604,7 +602,7 @@
                         <!-- 3D Book 7 (Bottom Left) -->
                         <div class="iu-book-wrapper"
                             style="--delay: -5s; --y-offset: -10px; --rot-x: 15deg; --rot-y: -15deg; --rot-z: 15deg; --x-dir: -0.707; --y-dir: 0.707;">
-                            <div class="iu-3d-book" style="--book-color: #06b6d4;">
+                            <div class="iu-3d-book" style="--book-color: #b7a17a;">
                                 <div class="iu-face iu-front">The Art<br>of War</div>
                                 <div class="iu-face iu-back"></div>
                                 <div class="iu-face iu-spine"></div>
@@ -652,19 +650,255 @@
             </div>
         </section>
 
+        <!-- Founder note -->
+        <section class="founder-section reveal-up" id="about">
+            <div class="chapter-marker" style="margin-bottom: 32px;">Chapter V · The Author</div>
+            <article class="founder-card">
+                <div class="founder-dogear" aria-hidden="true"></div>
+                <header class="founder-meta">
+                    <span>memo · from the founder · apr 2026</span>
+                    <span>commit 4a2b9c</span>
+                </header>
+                <div class="founder-body">
+                    <h3>Dear reader,</h3>
+                    <p>My grandfather was the reason I fell in love with books. He read to me before I could read myself, and the stories always felt bigger in his voice than they ever did on the page.</p>
+                    <p>I built Audifyme for the people who already love books — and just as much for the people who don't think they do. A lot of people say they "aren't readers". Usually what they mean is they never found the right voice to read to them. A story hits differently when it's narrated by someone whose voice you actually want in your head — a friend, a parent, a character you made up from scratch. That's the part I wanted to unlock.</p>
+                    <p>If you already love books, Audifyme is a new way to experience them. A familiar novel in a completely different voice becomes a completely different book. And if you've never finished one, that's fine too — you don't have to read. You can just listen. Anywhere. In any voice you want.</p>
+                    <p>My hope is simple: more stories, reaching more people, in more voices than publishers could ever print.</p>
+                    <p><em>Thanks for being here.</em></p>
+                    <p class="founder-sign">
+                        - <strong>Festim Jetishi</strong>, Switzerland<br>
+                        <span>founder &amp; only employee · <a href="mailto:jetishi.festim@gmail.com">jetishi.festim@gmail.com</a></span>
+                    </p>
+                </div>
+                <footer class="founder-commit">commit 4a2b9c · "one more pass on the hero" · 2 hours ago</footer>
+            </article>
+        </section>
+
+        <!-- Testimonials -->
+        <section class="reviews-section reveal-up" id="reviews">
+            <div class="chapter-marker">Chapter VI · Readers</div>
+            <h2 class="section-title">
+                <em>"It made books feel new again."</em>
+                <span class="muted">- and four more reviews.</span>
+            </h2>
+            <div class="reviews-grid">
+                <article class="review-card">
+                    <div class="review-corner" aria-hidden="true"></div>
+                    <div class="review-stars" aria-label="5 out of 5">5 stars</div>
+                    <p class="review-body">"I uploaded my grandmother's voicemails from 2014 and had her read me the poems she used to. I've listened to it every night for a week. Don't read this review if you're at work."</p>
+                    <p class="review-sign">
+                        <span class="review-name">- Elena</span>
+                        <span class="review-rel">granddaughter · Barcelona</span>
+                    </p>
+                </article>
+                <article class="review-card">
+                    <div class="review-corner" aria-hidden="true"></div>
+                    <div class="review-stars" aria-label="5 out of 5">5 stars</div>
+                    <p class="review-body">"I was the kid who hated reading. I've 'read' 11 books this month because my best friend Marcus is now the narrator of every one of them. Thank you for ruining my productivity."</p>
+                    <p class="review-sign">
+                        <span class="review-name">- Jake, 24</span>
+                        <span class="review-rel">reformed non-reader · Austin, TX</span>
+                    </p>
+                </article>
+                <article class="review-card">
+                    <div class="review-corner" aria-hidden="true"></div>
+                    <div class="review-stars" aria-label="5 out of 5">5 stars</div>
+                    <p class="review-body">"As a dyslexic JD student, audiobooks are how I read. Audifyme let me put my wife's voice on a 600-page contract law textbook. Studying has never been less miserable."</p>
+                    <p class="review-sign">
+                        <span class="review-name">- Priya</span>
+                        <span class="review-rel">JD student · Toronto</span>
+                    </p>
+                </article>
+                <article class="review-card">
+                    <div class="review-corner" aria-hidden="true"></div>
+                    <div class="review-stars" aria-label="5 out of 5">5 stars</div>
+                    <p class="review-body">"I made my dad read <em>The Hobbit</em> to me again. He's 71. He laughed when he heard himself. I laughed. Then I cried a little. 10/10 app, 10/10 dad."</p>
+                    <p class="review-sign">
+                        <span class="review-name">- Noah</span>
+                        <span class="review-rel">son · Dublin</span>
+                    </p>
+                </article>
+                <article class="review-card">
+                    <div class="review-corner" aria-hidden="true"></div>
+                    <div class="review-stars" aria-label="5 out of 5">5 stars</div>
+                    <p class="review-body">"I teach high school English. My students now listen to <em>The Great Gatsby</em> in the voice of, let's just say, a very popular animated sponge. Engagement is up 400%. The curriculum is fine. Their parents are confused. I love it."</p>
+                    <p class="review-sign">
+                        <span class="review-name">- Ms. Alvarez</span>
+                        <span class="review-rel">teacher · Phoenix, AZ</span>
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <!-- Pricing -->
+        <section class="pricing-section reveal-up" id="pricing">
+            <div class="chapter-marker">Chapter VII · Pricing</div>
+            <h2 class="section-title"><em>Honest pricing.</em></h2>
+            <p class="section-sub">No credits. No "minutes packs". Three plans. Cancel anytime.</p>
+
+            <div class="pricing-grid">
+                <div class="price-card price-card-free">
+                    <header class="price-head">
+                        <span class="price-name">Free</span>
+                    </header>
+                    <div class="price-amount">
+                        <span class="price-currency">$</span>
+                        <span class="price-value">0</span>
+                    </div>
+                    <p class="price-annual">forever</p>
+                    <ul class="price-feats">
+                        <li>- 1 hour of new audio / month</li>
+                        <li>- 10 min daily limit</li>
+                        <li>- Good Quality (mini model)</li>
+                        <li>- A short ad when you create a book</li>
+                        <li>- Listen to already-generated audio anytime</li>
+                    </ul>
+                    <a href="#" class="btn-large">Start free</a>
+                </div>
+
+                <div class="price-card price-card-featured">
+                    <header class="price-head">
+                        <span class="price-name">Audifyme+</span>
+                        <span class="price-badge">MOST POPULAR</span>
+                    </header>
+                    <div class="price-amount">
+                        <span class="price-currency">$</span>
+                        <span class="price-value">5.99</span>
+                        <span class="price-period">/ month</span>
+                    </div>
+                    <p class="price-annual">or $59.99 / year <em>(~17% off)</em></p>
+                    <ul class="price-feats">
+                        <li>- Unlimited* listening</li>
+                        <li>- Good Quality (mini model)</li>
+                        <li>- No ads, ever</li>
+                        <li>- All voices, all books</li>
+                    </ul>
+                    <p class="price-footnote">*fair-use throttle after 10 hrs / month, then 30 min / day of new audio. Already-generated audio plays forever.</p>
+                    <a href="#" class="btn-large">Try Audifyme+</a>
+                </div>
+
+                <div class="price-card price-card-pro">
+                    <header class="price-head">
+                        <span class="price-name">Audifyme Pro</span>
+                        <span class="price-badge price-badge-pro">BEST QUALITY</span>
+                    </header>
+                    <div class="price-amount">
+                        <span class="price-currency">$</span>
+                        <span class="price-value">9.99</span>
+                        <span class="price-period">/ month</span>
+                    </div>
+                    <p class="price-annual">or $99.99 / year</p>
+                    <ul class="price-feats">
+                        <li>- Unlimited* listening</li>
+                        <li>- <strong>Best Quality</strong> (max model)</li>
+                        <li>- Everything in Audifyme+</li>
+                        <li>- Priority on new voices / features</li>
+                    </ul>
+                    <a href="#" class="btn-large">Go Pro</a>
+                </div>
+            </div>
+
+            <aside class="pricing-why">
+                <h4>Why three tiers and no "buy credits"?</h4>
+                <p>Audiobooks aren't a vending machine. You're subscribing to a story, not a unit of audio. We only generate narration in the moments you actually press play — so if you pay $5.99 and listen to two hours out of twenty, we simply eat the savings. That's how the prices stay honest.</p>
+            </aside>
+        </section>
+
+        <!-- FAQ -->
+        <section class="faq-section reveal-up" id="faq">
+            <div class="chapter-marker">Chapter VIII · Questions</div>
+            <h2 class="section-title"><em>Questions you're about to ask.</em></h2>
+            <div class="faq-list">
+                <details class="faq-item faq-highlight">
+                    <summary><span class="faq-q"><span class="faq-badge">new</span> Can I start a book with one narrator and switch mid-chapter?</span><span class="faq-icon">+</span></summary>
+                    <div class="faq-a">Yes — and it's the feature nobody else has. Start <em>Dune</em> with a pro narrator, decide 40 minutes in that it'd hit harder in your brother's voice, tap the narrator name, pick him. The book re-narrates from where you are. Your place, your bookmarks, your highlights — all preserved. Swap as many times as you want. No re-downloads, no weird gap in the audio.</div>
+                </details>
+                <details class="faq-item">
+                    <summary><span class="faq-q">Can I, uh... describe a <em>very specific</em> voice when making one?</span><span class="faq-icon">+</span></summary>
+                    <div class="faq-a">The synthesis engine takes a text description and invents a voice that matches. What you describe is up to you. We don't police adjectives. We'd just politely ask you not to share the output publicly, and not to use it for anything commercial. What happens in your headphones at 11pm while you're being read <em>Crime &amp; Punishment</em> is between you and Dostoyevsky.</div>
+                </details>
+                <details class="faq-item">
+                    <summary><span class="faq-q">Can I reimagine a book with a totally different narrator?</span><span class="faq-icon">+</span></summary>
+                    <div class="faq-a">Yes. That's half the fun. A familiar book sounds wildly different when you swap in your best friend, your dad, or a voice you designed from scratch — and because you can change the narrator mid-book, committing costs you nothing.</div>
+                </details>
+                <details class="faq-item">
+                    <summary><span class="faq-q">What happens if I upload a PDF with pictures?</span><span class="faq-icon">+</span></summary>
+                    <div class="faq-a">We extract the text. OCR for scanned PDFs is coming later this year.</div>
+                </details>
+                <details class="faq-item">
+                    <summary><span class="faq-q">What file types can I bring in?</span><span class="faq-icon">+</span></summary>
+                    <div class="faq-a">PDF, EPUB, plain text, and the weird one-off document your friend swears is readable. If the text can be extracted cleanly, Audifyme can usually turn it into a book.</div>
+                </details>
+                <details class="faq-item">
+                    <summary><span class="faq-q">How is it so cheap?</span><span class="faq-icon">+</span></summary>
+                    <div class="faq-a">We only generate audio when you're actually listening. Most people don't finish audiobooks. Most subscription services bill you for the full thing anyway. We don't.</div>
+                </details>
+                <details class="faq-item">
+                    <summary><span class="faq-q">Can I download an audiobook to listen offline?</span><span class="faq-icon">+</span></summary>
+                    <div class="faq-a">Yes - per chapter. We hid "download the whole book" deep in Settings on purpose. It's more expensive for us, and it's also how you end up with 4GB of audio you'll never listen to.</div>
+                </details>
+                <details class="faq-item">
+                    <summary><span class="faq-q">Why iOS only?</span><span class="faq-icon">+</span></summary>
+                    <div class="faq-a">Because I had to start somewhere and I have an iPhone. Android is in the works. Web version later.</div>
+                </details>
+                <details class="faq-item">
+                    <summary><span class="faq-q">Who's behind Audifyme?</span><span class="faq-icon">+</span></summary>
+                    <div class="faq-a">Me. Festim Jetishi. One person, Switzerland-based, two cats. That's the team. <a href="mailto:jetishi.festim@gmail.com">Email me</a>.</div>
+                </details>
+                <details class="faq-item">
+                    <summary><span class="faq-q">What if I hate it?</span><span class="faq-icon">+</span></summary>
+                    <div class="faq-a">Cancel in one tap. Apple/Google handle refunds. I'd love to hear <em>why</em> though - <a href="mailto:jetishi.festim@gmail.com">jetishi.festim@gmail.com</a>.</div>
+                </details>
+                <details class="faq-item">
+                    <summary><span class="faq-q">Is there a referral program?</span><span class="faq-icon">+</span></summary>
+                    <div class="faq-a">Not yet. If you tell a friend and it gets them back into books, that's enough marketing for me.</div>
+                </details>
+            </div>
+        </section>
+
         <section class="cta-section reveal-up">
-            <h2>Your next story<br>is waiting.</h2>
-            <a href="#" class="btn-large">Start Listening Free</a>
+            <h2>Your next story<br><em>is waiting.</em></h2>
+            <a href="#" class="btn-large">Start listening - free</a>
+            <p class="cta-micro">· no credit card · works as a guest · iOS</p>
         </section>
 
     </main>
 
     <footer class="site-footer">
-        <div class="footer-content">
-            <div class="brand"><img src="/logo.png" alt="Audifyme" class="footer-logo">Audifyme</div>
-            <div class="copyright">© 2026 Audifyme. Any book. Any voice.</div>
+        <div class="footer-top">
+            <div class="footer-col footer-brand">
+                <div class="brand"><img src="/logo.png" alt="Audifyme">Audifyme</div>
+                <p class="footer-tag">Any book. Any voice.</p>
+                <p class="footer-made">Made in Switzerland with too much coffee and two cats named <em>Page</em> and <em>Margin</em>.</p>
+            </div>
+            <div class="footer-col">
+                <h5>App</h5>
+                <a href="#">Download on App Store</a>
+                <a class="disabled">Android (coming soon)</a>
+                <a href="#">What's new</a>
+            </div>
+            <div class="footer-col">
+                <h5>Company</h5>
+                <a href="#about">About</a>
+                <a href="#pricing">Pricing</a>
+                <a href="#faq">FAQ</a>
+                <a href="mailto:jetishi.festim@gmail.com">jetishi.festim@gmail.com</a>
+            </div>
+            <div class="footer-col">
+                <h5>Legal</h5>
+                <a href="#">Terms</a>
+                <a href="#">Privacy</a>
+                <a href="#">Voice consent policy</a>
+                <a href="#">DMCA</a>
+            </div>
+        </div>
+        <div class="footer-strip">
+            Copyright 2026 Audifyme / v2.4.1 / last deploy: apr 19, 2026 / built by one person / <span class="heart">love</span>
         </div>
     </footer>
+
+    <button class="version-stamp" aria-label="Dismiss version tag" onclick="this.style.display='none'">v2.4.1</button>
 
     <script type="module" src="/src/main.ts"></script>
 </body>

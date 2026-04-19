@@ -1,7 +1,7 @@
 import './style.css'
 
 /* =========================================================================
-   AUDIFYME — DARK CINEMATIC ANIMATIONS + VOICE PLAYER
+   AUDIFYME � DARK CINEMATIC ANIMATIONS + VOICE PLAYER
    ========================================================================= */
 
 // 1. Initial Load Animations
@@ -252,10 +252,11 @@ document.querySelectorAll('.immersion-btn').forEach(btn => {
 
 // 5. Voice Synthesis Showcase Animation
 const prompts = [
-    { text: "A grumpy 60-year-old dwarven blacksmith who's had one too many ales.", prefix: "DWF", color: "#2dd4bf" },
-    { text: "A soft-spoken elven queen with centuries of wisdom and a hint of sadness.", prefix: "ELV", color: "#a78bfa" },
-    { text: "An overly enthusiastic 90s TV host selling the world's greatest vacuum cleaner.", prefix: "SLS", color: "#f59e0b" },
-    { text: "A jaded cyberpunk hacker explaining how to bypass corpo security.", prefix: "CYB", color: "#ef4444" }
+    { text: "A grumpy 60-year-old dwarven blacksmith who's had one too many ales.", prefix: "DWF", color: "#7f9b6d" },
+    { text: "A charismatic former wrestler with a gravel voice who calls people 'jabroni'.", prefix: "RCK", color: "#c9a87a" },
+    { text: "A soft-spoken British narrator describing a lion hunt on the savanna.", prefix: "NAT", color: "#8fa878" },
+    { text: "A turtleneck-wearing tech founder announcing the next big thing. One more thing...", prefix: "SVJ", color: "#f59e0b" },
+    { text: "A gap-toothed late-night host doing a sleepy bedtime monologue.", prefix: "LNT", color: "#ef4444" }
 ];
 
 const vsTypingText = document.getElementById('vsTypingText');
@@ -341,3 +342,82 @@ setTimeout(() => {
         runSynthesisLoop();
     }
 }, 1000);
+
+/* =========================================================================
+   REDESIGN ADDITIONS
+   ========================================================================= */
+
+const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+// Reveal hero content on load
+window.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('.hero-section .reveal-up, .hero-section .reveal-scale').forEach(el => {
+        setTimeout(() => el.classList.add('is-visible'), 100);
+    });
+});
+
+// Observe new sections for reveal animations
+const redesignObserver = new IntersectionObserver((entries, obs) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('is-visible');
+            obs.unobserve(entry.target);
+        }
+    });
+}, { rootMargin: '0px 0px -10% 0px', threshold: 0.1 });
+
+document.querySelectorAll(
+    '.ticker-section, .founder-section, .reviews-section, .pricing-section, .faq-section'
+).forEach(el => redesignObserver.observe(el));
+
+// Scroll progress bar
+const progressBar = document.getElementById('scroll-progress');
+if (progressBar) {
+    const updateProgress = () => {
+        const scrollTop = window.scrollY;
+        const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+        const pct = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
+        progressBar.style.width = `${pct}%`;
+    };
+    window.addEventListener('scroll', updateProgress, { passive: true });
+    updateProgress();
+}
+
+// Magnetic pull on .btn-large
+if (!prefersReducedMotion) {
+    document.querySelectorAll<HTMLElement>('.btn-large').forEach(btn => {
+        btn.addEventListener('mousemove', (e) => {
+            const rect = btn.getBoundingClientRect();
+            const dx = e.clientX - (rect.left + rect.width / 2);
+            const dy = e.clientY - (rect.top + rect.height / 2);
+            btn.style.transform = `translate(${dx / 8}px, ${dy / 8}px)`;
+        });
+        btn.addEventListener('mouseleave', () => {
+            btn.style.transform = '';
+        });
+    });
+}
+
+// iPhone narrator typewriter � cycle through voices
+const narratorEl = document.getElementById('ip-narrator');
+if (narratorEl && !prefersReducedMotion) {
+    const narrators = ['Mom', 'Dad', 'Jack (best friend)', 'Julian (pro)', "Morgan Freeman's cousin", 'Grandma'];
+    let idx = 0;
+    const cycle = async () => {
+        while (true) {
+            await new Promise(r => setTimeout(r, 3500));
+            idx = (idx + 1) % narrators.length;
+            const next = narrators[idx];
+            // fade out
+            narratorEl.style.transition = 'opacity 0.3s';
+            narratorEl.style.opacity = '0';
+            await new Promise(r => setTimeout(r, 300));
+            narratorEl.textContent = next;
+            narratorEl.style.opacity = '1';
+        }
+    };
+    cycle();
+}
+
+// FAQ � smooth icon rotate is via CSS. Nothing extra needed.
+
